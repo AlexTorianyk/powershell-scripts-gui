@@ -9,6 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "format": "npm run format:ts && npm run format:scss",
+    "format:ts": "prettier --write \"src/**/*.{ts,tsx}\" --parser typescript",
+    "format:scss": "prettier --write \"src/**/*.scss\" --parser scss",
     "electron-tsc": "tsc electron-main.ts && ng build --base-href ./ && electron .",
     "electron": "ng build --base-href ./ && electron ."
   },
@@ -24,6 +27,7 @@
     "@angular/router": "~10.1.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
+    "tslint-config-prettier": "^1.18.0",
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
@@ -42,6 +46,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "prettier": "2.1.2",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
