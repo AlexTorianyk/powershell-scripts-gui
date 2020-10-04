@@ -1,1 +1,4 @@
 package.json
+build
+e2e
+node_modules
