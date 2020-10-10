@@ -1,0 +1,50 @@
+@import 'bootstrap/variables';
+@import '~bootstrap/scss/mixins';
+
+.page-portal {
+  padding-top: 65px;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 30px;
+  }
+
+  .header-text {
+    font-size: 40px;
+    color: theme-color('primary');
+    font-weight: bold;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 25px;
+    }
+  }
+
+  .header-filter {
+    font-size: 15px;
+    padding: 8px 20px;
+  }
+
+  .filter-item {
+    display: inline-block;
+    font-size: 13px;
+    padding: 4px 8px;
+    background: $primary-100;
+    border: 1px solid $primary;
+    margin-left: 5px;
+    border-radius: $border-radius;
+    color: $primary;
+  }
+
+  .content {
+    background: $primary-100;
+    border-radius: 6px;
+  }
+}
+
+.grid-24 {
+  @include make-grid-columns(24, 0);
+}
+
+.pointer {
+  cursor: pointer;
+}
