@@ -35,7 +35,9 @@ $light: $primary-100;
 $dark: $primary-800;
 
 $theme-colors: ();
-$theme-colors: map-merge(('primary': $primary,
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
     'secondary': $secondary,
     'success': $success,
     'info': $info,
@@ -44,7 +46,8 @@ $theme-colors: map-merge(('primary': $primary,
     'light': $light,
     'dark': $dark,
   ),
-  $theme-colors);
+  $theme-colors
+);
 
 // Options
 
@@ -81,10 +84,8 @@ $transition-collapse: height 0.35s ease;
 
 // Fonts
 
-$font-family-heading: 'Lora',
-serif;
-$font-family-base: 'Lato',
-sans-serif;
+$font-family-heading: 'Lora', serif;
+$font-family-base: 'Lato', sans-serif;
 
 // Buttons + Forms
 
