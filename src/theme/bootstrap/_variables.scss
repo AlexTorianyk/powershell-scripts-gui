@@ -19,14 +19,14 @@ $red: #ff503f;
 $orange: #ff9e13;
 $green: #4ed98f;
 
-$primary: #1a171b;
+$primary: #0db7ed;
 $primary-900: #38313a;
 $primary-800: #454347;
 $primary-600: #79707c;
 $primary-200: #eeeff0;
 $primary-100: #f9fafb;
 
-$secondary: $primary-600;
+$secondary: #384d54;
 $success: $green;
 $info: $purple;
 $warning: $orange;
@@ -35,9 +35,7 @@ $light: $primary-100;
 $dark: $primary-800;
 
 $theme-colors: ();
-$theme-colors: map-merge(
-  (
-    'primary': $primary,
+$theme-colors: map-merge(('primary': $primary,
     'secondary': $secondary,
     'success': $success,
     'info': $info,
@@ -46,26 +44,7 @@ $theme-colors: map-merge(
     'light': $light,
     'dark': $dark,
   ),
-  $theme-colors
-);
-
-// Grid
-
-$dashboard-navigation-width: 95px;
-
-$container-max-widths: (
-  md: 720px - $dashboard-navigation-width,
-  lg: 960px - $dashboard-navigation-width,
-  xl: 1388px - $dashboard-navigation-width,
-);
-
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1420px,
-);
+  $theme-colors);
 
 // Options
 
@@ -102,8 +81,10 @@ $transition-collapse: height 0.35s ease;
 
 // Fonts
 
-$font-family-heading: 'Lora', serif;
-$font-family-base: 'Lato', sans-serif;
+$font-family-heading: 'Lora',
+serif;
+$font-family-base: 'Lato',
+sans-serif;
 
 // Buttons + Forms
 
@@ -126,23 +107,5 @@ $btn-border-width: 2px;
 // Components
 
 $transition-base: all 0.1s ease-in-out;
-
-// Tooltips
-
-$tooltip-font-size: 12px;
-$tooltip-bg: $primary;
-$tooltip-opacity: 1;
-
-// Dropdowns
-
-$dropdown-font-size: 16px;
-$dropdown-link-color: $primary;
-$dropdown-link-hover-color: $primary;
-$dropdown-link-hover-bg: $primary-200;
-$dropdown-box-shadow: 0 0 30px rgba($black, 0.1);
-$dropdown-color: $primary;
-$dropdown-bg: $white;
-$dropdown-min-width: 180px;
-$dropdown-item-padding-x: 15px;
 
 @import '~bootstrap/scss/variables';
